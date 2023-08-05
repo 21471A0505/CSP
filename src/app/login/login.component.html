@@ -1,0 +1,22 @@
+
+ <body>
+	<h1> Login Form.</h1>
+	<div class="content">
+	<section>
+		<div class="register-wrapper">
+		<div class="register-block">
+		<h3 class="register-title">Login your account</h3>
+			<p>Login your account using the form below.</p>
+			<form action="">
+			<input type="email" name="name" placeholder="Enter your email"  required [(ngModel)]="User.email" />
+			<input type="password" name="pass" placeholder="Enter your password"  required [(ngModel)]="User.pass"/>
+			<a href="#"><input (click)="Read()" type="submit" value="Login my account"/></a>
+			</form>
+		</div>
+		</div>
+	</section>
+</div>
+	<!-- <footer>
+		<a href="#" target="_blank">MBranga.</a>
+	</footer> -->
+</body>

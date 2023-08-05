@@ -1,0 +1,39 @@
+<div class="container" id="registration-form">
+    <div class="image"></div>
+    <div class="frm">
+        <h1>Read</h1>
+        <form #r="ngForm" >
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="cell" class="form-control" name="phone" placeholder="phone no" [(ngModel)]="User.phone" required/>
+            </div> 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg float-left" 
+                (click)="Read()">Read</button>
+            </div>
+            <table>
+                <tr><th>Name :</th>
+                    <td>{{User.name}}</td>
+                </tr>
+                <tr><th>Email :</th>
+                    <td>{{User.email}}</td>
+                </tr>
+                <tr><th>Gender :</th>
+                    <td>{{User.gender}}</td>
+                </tr>
+                <tr><th>City :</th>
+                    <td>{{User.city}}</td>
+                </tr>
+                <tr><th>DoB :</th>
+                    <td>{{User.dob}}</td>
+                </tr>
+                <tr><th>Education :</th>
+                    <td>{{User.education}}</td>
+                </tr>
+                <tr><th>Job :</th>
+                    <td>{{User.job}}</td>
+                </tr>
+            </table>
+        </form><br><br><br>
+    </div>
+</div>

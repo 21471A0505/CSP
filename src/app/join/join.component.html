@@ -1,0 +1,47 @@
+<div class="container" id="registration-form">
+    <div class="image"></div>
+    <div class="frm">
+        <h1>Join Now</h1>
+        <form #r="ngForm" (ngSubmit)="Insert(r)">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Name" ngModel required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Email" ngModel required>
+            </div>
+            
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <input type="text" class="form-control" name="gender" placeholder="Gender" ngModel required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" placeholder="City" ngModel required>
+            </div>
+            <div class="form-group">
+              <label for="date">DOB</label>
+              <input type="date" class="form-control" name="dob" placeholder="date of birth" ngModel required>
+          </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="cell" class="form-control" name="phone" placeholder="phone no" ngModel required/>
+            </div>
+            <div class="form-group">
+              <label for="education">Education</label>
+              <input type="text" class="form-control" name="education" placeholder="Enter Name" ngModel required>
+            </div>
+            <div class="form-group">
+              <label for="job">Job</label>
+              <input type="text" class="form-control" name="job" placeholder="Enter Name" ngModel required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submitForm" class="btn btn-success btn-lg float-left">submit</button>
+            </div>
+            
+        </form><br><br><br>
+    </div>
+  </div>
+  
+  
